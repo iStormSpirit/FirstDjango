@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 <h1>Приветсвтую на главной страничке</h1>
-<a href="/items/"> Список товаров</a>
-</body>
-</html>
+{{ block.super }}
+<a href="{% url 'items-list' %}"> Список товаров</a>
+{% include 'inc/inc-footer.html' %}
+{% endblock %}
+
