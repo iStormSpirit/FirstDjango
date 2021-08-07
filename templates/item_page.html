@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+</head>
+<body>
+<h1>Товар {{ item.name }} </h1>
+<div>
+    Количество: {{ item.quantity | default:"Товар отсутствует" }}
+</div>
+<a href="/items/"> Список товаров</a>
+</body>
+</html>
