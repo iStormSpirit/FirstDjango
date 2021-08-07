@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Item</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-<h1>Товар {{ item.name }} </h1>
+<h1 class="main-header">Товар {{ item.name }}</h1>
+<h1>Заголовок</h1>
 <div>
     Количество: {{ item.quantity | default:"Товар отсутствует" }}
 </div>
