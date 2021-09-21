@@ -8,8 +8,10 @@
 5. Запуск проекта: `python manage.py runserver`
 
 ## Полезные команды
+```
 Активация extensions `INSTALLED_APPS [django_extensions]`
 Запуск shell: `python manage.py shell_plus --ipython`
 Установка django `pip install django` 3.2.6
 Установка extensions `pip install django-extensions 3.1.3`
 Установка ipython `pip install ipython  `
+```
